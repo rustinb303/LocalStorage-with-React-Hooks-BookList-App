@@ -1,4 +1,4 @@
-interface Customer {
+export interface Customer {
   id: string;
   firstName: string;
   lastName: string;
@@ -9,8 +9,6 @@ interface Customer {
   visits: Visit[];
 }
 
-interface Visit {
+export interface Visit {
   timestamp: number;
 }
-
-export type { Customer, Visit };

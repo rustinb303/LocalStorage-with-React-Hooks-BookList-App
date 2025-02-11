@@ -1,5 +1,5 @@
 import React, { useState, FormEvent } from 'react';
-import type { Customer } from '../types';
+import type { Customer, Visit } from '../types';
 
 interface AIQueryProps {
   customers: Customer[];
@@ -17,7 +17,7 @@ const AIQuery: React.FC<AIQueryProps> = ({ customers }) => {
       query,
       customers: customers.map(customer => ({
         ...customer,
-        visits: customer.visits.map(visit => new Date(visit.timestamp).toISOString())
+        visits: customer.visits.map((visit: Visit) => new Date(visit.timestamp).toISOString())
       }))
     };
     

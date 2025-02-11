@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Customer } from '../types';
+import type { Customer, Visit } from '../types';
 
 interface CustomerDetailsProps {
   customer: Customer;
@@ -20,7 +20,7 @@ const CustomerDetails: React.FC<CustomerDetailsProps> = ({ customer, onClose }) 
         <h3>Visit History</h3>
         {customer.visits.length > 0 ? (
           <ul className="visit-list">
-            {customer.visits.map((visit, index) => (
+            {customer.visits.map((visit: Visit, index: number) => (
               <li key={index}>
                 {new Date(visit.timestamp).toLocaleString()}
               </li>
