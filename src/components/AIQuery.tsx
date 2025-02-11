@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Customer } from '../types';
+import React, { useState, FormEvent } from 'react';
+import type { Customer } from '../types';
 
 interface AIQueryProps {
   customers: Customer[];
