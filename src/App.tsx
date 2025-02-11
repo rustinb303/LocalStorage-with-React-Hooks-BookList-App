@@ -3,7 +3,7 @@ import CustomerForm from './components/CustomerForm';
 import CustomerList from './components/CustomerList';
 import CustomerDetails from './components/CustomerDetails';
 import AIQuery from './components/AIQuery';
-import { Customer } from './types';
+import type { Customer } from './types.d';
 
 const getCustomersFromLS = () => {
   const data = localStorage.getItem('customers');
