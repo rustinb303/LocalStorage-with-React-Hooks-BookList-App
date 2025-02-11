@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Customer } from '../types';
+import type { Customer } from '../types.d';
 
 interface CustomerListProps {
   customers: Customer[];

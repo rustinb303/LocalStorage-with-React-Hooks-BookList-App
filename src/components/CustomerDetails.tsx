@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Customer, Visit } from '../types';
+import type { Customer, Visit } from '../types.d';
 
 interface CustomerDetailsProps {
   customer: Customer;

@@ -1,5 +1,5 @@
 import React, { useState, FormEvent } from 'react';
-import type { Customer, Visit } from '../types';
+import type { Customer, Visit } from '../types.d';
 
 const CustomerForm: React.FC<{ onSubmit: (customer: Customer) => void }> = ({ onSubmit }) => {
   const [firstName, setFirstName] = useState('');
